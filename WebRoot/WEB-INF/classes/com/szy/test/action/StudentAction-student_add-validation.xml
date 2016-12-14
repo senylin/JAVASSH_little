@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="student.studentid">
+		<field-validator type="required">
+			<message>reqired firstname</message>
+		</field-validator>
+	</field>
+	
+	<field name="student.name">
+		<field-validator type="requiredstring">
+			<message>required lastname</message>
+		</field-validator>
+	</field>
+	
+	<field name="student.classid">
+		<field-validator type="required">
+			<message>required a</message>
+		</field-validator>
+	</field>
+	
+	<field name="student.marjorid">
+		<field-validator type="required">
+			<message>required g</message>
+		</field-validator>
+	</field>
+	
+	<field name="student.roomid">
+		<field-validator type="required">
+			<message>required e</message>
+		</field-validator>
+	</field>
+</validators>

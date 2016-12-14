@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="globalMessages"></constant>
+	
+	
+ <!--  <package name="user" extends="struts-default" >
+    	<action name="user_*" class="userAction" method="{1}">
+   		 	<result name="loginUI" >/login.jsp</result>
+    		<result name="login" type="redirect">/user_list.action</result>
+    		<result name="addUI" >/add.jsp</result>
+    		<result name="add" type="redirect">/user_list.action</result>
+    		<result name="updateP">/update.jsp</result>
+    		<result name="update" type="redirect">/user_list.action</result>
+    		<result name="delete" type="redirect">/user_list.action</result>
+    		<result name="list">/list.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    	
+    </package>
+ --> 
+      <package name="userinfo" extends="struts-default" >
+    	<action name="userinfo_*" class="userinfoAction" method="{1}">
+   		 	<result name="loginUI" >/login.jsp</result>
+    		<result name="login" type="redirect">/index.jsp</result>
+    		<result name="logout" type="redirect">/login.jsp</result>
+    		<result name="addUI" >/add.jsp</result>
+    		<result name="add" type="redirect">/login.jsp</result>
+    		<result name="updateP">/userupdate.jsp</result>
+    		<result name="update" type="redirect">/userinfo_list2.action</result>
+    		<result name="delete" type="redirect">/userinfo_list2.action</result>
+    		<result name="list2">/userlist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>
+    <package name="student" extends="struts-default">
+    	<action name="student_*" class="studentAction" method="{1}">
+    		<result name="addUI" >/studentadd.jsp</result>
+    		<result name="add" type="redirect">/student_slist.action</result>
+    		<result name="updateP">/studentupdate.jsp</result>
+    		<result name="update" type="redirect">/student_slist.action</result>
+    		<result name="delete" type="redirect">/student_slist.action</result>
+    		<result name="slist">/studentlist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>
+    <package name="major" extends="struts-default">
+    	<action name="major_*" class="majorAction" method="{1}">
+    		<result name="addUI" >/majoradd.jsp</result>
+    		<result name="add" type="redirect">/major_list.action</result>
+    		<result name="updateP">/majorupdate.jsp</result>
+    		<result name="update" type="redirect">/major_list.action</result>
+    		<result name="delete" type="redirect">/major_list.action</result>
+    		<result name="list">/majorlist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>
+    <package name="room" extends="struts-default">
+    	<action name="room_*" class="roomAction" method="{1}">
+    		<result name="addUI" >/roomadd.jsp</result>
+    		<result name="add" type="redirect">/room_list.action</result>
+    		<result name="updateP">/roomupdate.jsp</result>
+    		<result name="update" type="redirect">/room_list.action</result>
+    		<result name="delete" type="redirect">/room_list.action</result>
+    		<result name="list">/roomlist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>
+    <package name="classes" extends="struts-default">
+    	<action name="classes_*" class="classesAction" method="{1}">
+    		<result name="addUI" >/classesadd.jsp</result>
+    		<result name="add" type="redirect">/classes_list.action</result>
+    		<result name="updateP">/classesupdate.jsp</result>
+    		<result name="update" type="redirect">/classes_list.action</result>
+    		<result name="delete" type="redirect">/classes_list.action</result>
+    		<result name="list">/classeslist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>    
+    <package name="finance" extends="struts-default">
+    	<action name="finance_*" class="financeAction" method="{1}">
+    		<result name="addUI" >/financeadd.jsp</result>
+    		<result name="add" type="redirect">/finance_list.action</result>
+    		<result name="updateP">/financeupdate.jsp</result>
+    		<result name="update" type="redirect">/finance_list.action</result>
+    		<result name="delete" type="redirect">/finance_list.action</result>
+    		<result name="list">/financelist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>   
+    <package name="book" extends="struts-default">
+    	<action name="book_*" class="bookAction" method="{1}">
+    		<result name="addUI" >/bookadd.jsp</result>
+    		<result name="add" type="redirect">/book_list.action</result>
+    		<result name="updateP">/bookupdate.jsp</result>
+    		<result name="update" type="redirect">/book_list.action</result>
+    		<result name="delete" type="redirect">/book_list.action</result>
+    		<result name="list">/booklist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>   
+    <package name="medicine" extends="struts-default">
+    	<action name="medicine_*" class="medicineAction" method="{1}">
+    		<result name="addUI" >/medicineadd.jsp</result>
+    		<result name="add" type="redirect">/medicine_list.action</result>
+    		<result name="updateP">/medicineupdate.jsp</result>
+    		<result name="update" type="redirect">/medicine_list.action</result>
+    		<result name="delete" type="redirect">/medicine_list.action</result>
+    		<result name="list">/medicinelist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package>  
+    <package name="message" extends="struts-default">
+    	<action name="message_*" class="messageAction" method="{1}">
+    		<result name="addUI" >/messageadd.jsp</result>
+    		<result name="add" type="redirect">/message_list.action</result>
+    		<result name="updateP">/messageupdate.jsp</result>
+    		<result name="update" type="redirect">/message_list.action</result>
+    		<result name="delete" type="redirect">/message_list.action</result>
+    		<result name="list">/messagelist.jsp</result>
+    		<result name="input">/{1}.jsp</result>
+    		
+    		<result name="download" type="stream">
+    			<param name="contentType">application/vnd.ms-excel</param>
+    			<param name="contentDisposition">attachment;fileName="AllUsers.xls"</param>
+    			<param name="inputName">downloadFile</param>
+    		</result>
+    	</action>
+    </package> 
+</struts>
